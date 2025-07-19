@@ -51,7 +51,6 @@ app.config['MAIL_ASCII_ATTACHMENTS'] = False
 db = SQLAlchemy(app)
 mail = Mail(app)
 
-# Models
 class User(db.Model):
     __tablename__ = 'users'
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
