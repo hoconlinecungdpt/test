@@ -118,7 +118,6 @@ with app.app_context():
     except Exception as e:
         app.logger.error(f"Failed to initialize app: {e}")
 
-# For Vercel serverless function
 app.debug = True
 
 # Export the Flask application
