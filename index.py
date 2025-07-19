@@ -47,7 +47,6 @@ app.config['MAIL_DEFAULT_SENDER'] = ('Health Checker Support', 'thinhgpt1706@gma
 app.config['MAIL_MAX_EMAILS'] = None
 app.config['MAIL_ASCII_ATTACHMENTS'] = False
 
-# Initialize extensions
 db = SQLAlchemy(app)
 mail = Mail(app)
 
