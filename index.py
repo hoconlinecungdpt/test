@@ -31,7 +31,6 @@ from threading import Lock
 
 app = Flask(__name__)
 
-# Database Configuration
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'postgres://neondb_owner:T4cXILdWm1EF@ep-floral-heart-a1qp38z8-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.secret_key = os.environ.get('SECRET_KEY', 'your_secret_key')
