@@ -114,7 +114,6 @@ def initialize_scheduler():
     except Exception as e:
         app.logger.error(f"Failed to initialize scheduler: {e}")
 
-# Initialize the app
 with app.app_context():
     try:
         db.create_all()
